@@ -1,59 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cap Bon Explorer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-</head>
-<body>
-    <header>
-        
-        <div class="logo">
-           <img src="images/Cap Bon Coastal Adventures.png"  alt="">
-           
-        </div>
-        <a href="index.html" class="web-title">Cap Bon Explorer</a> 
-        <nav>
-          <a href="activities.html" class="links">Activitie</a>
-          <a href="agenda.html">Diary</a>
-          <a href="reservation.html">Reservation</a>
-          <a href="contact.html">Contact</a>
-
-        </nav>
-    </header>
-    
-
-<main>
-
-    <section class="hero-content">
-
-        <h1>Cap Bon Explorer</h1>
-
-        <h2>Explore the beauty of Cap Bon</h2>
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Home | Cap Bon Explorer
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img alt="Cap Bon Explorer logo" src="images/logo.png"/>
+      <span>
+       Cap Bon Explorer
+      </span>
+     </a>
+     <button aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="activities.html">
+         Activities
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="agenda.html">
+         Diary
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="reservation.html">
+         Reservation
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section class="hero" style="background-image:linear-gradient(90deg,rgba(8,28,53,.72),rgba(8,28,53,.08)),url('images/golden.png')">
+    <div class="container hero-inner">
+     <span class="eyebrow">
+      DISCOVER THE BEAUTY OF TUNISIA
+     </span>
+     <h1>
+      Explore the magic
+      <br/>
+      of
+      <span>
+       Cap Bon
+      </span>
+     </h1>
+     <p>
+      Discover coastal views, local traditions, historic places and unforgettable experiences across the Cap Bon peninsula.
+     </p>
+     <a class="btn btn-primary btn-lg" href="activities.html">
+      Discover activities
+      <i class="bi bi-arrow-right">
+      </i>
+     </a>
+    </div>
+   </section>
+   <section class="section-pad">
+    <div class="container">
+     <div class="section-heading">
+      <span class="eyebrow">
+       WELCOME TO CAP BON
+      </span>
+      <h2>
+       Who are we?
+      </h2>
+     </div>
+     <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+       <p class="lead-copy">
+        Cap Bon Explorer invites you to discover the heritage, know-how and landscapes of the Cap Bon region. From the lively streets of Nabeul to the coast of K&eacute;libia and the historic site of Kerkouane, our peninsula offers something special around every corner.
+       </p>
+       <p>
+        Our project brings together local experiences that celebrate nature, culture and craftsmanship. Browse the activities, explore the events diary and use our reservation simulator to prepare a visit. This website is an educational project, and all booking details are simulated.
+       </p>
+      </div>
+      <div class="col-lg-5">
+       <img alt="A sunny traditional street in Nabeul" class="about-image" src="images/medina-nabeul.jpg"/>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section-pad soft-bg">
+    <div class="container">
+     <div class="section-heading text-center">
+      <span class="eyebrow">
+       FIND YOUR EXPERIENCE
+      </span>
+      <h2>
+       Featured experiences
+      </h2>
+      <p>
+       Start exploring with a few of our favourite activities.
+      </p>
+     </div>
+     <div class="row g-4" id="featuredActivities">
+     </div>
+     <div class="text-center mt-4">
+      <a class="btn btn-outline-primary" href="activities.html">
+       View all activities
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="section-pad">
+    <div class="container">
+     <div class="section-heading text-center">
+      <span class="eyebrow">
+       WHY VISIT?
+      </span>
+      <h2>
+       Why discover Cap Bon?
+      </h2>
+     </div>
+     <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+       <div class="benefit">
+        <i class="bi bi-water">
+        </i>
+        <h3>
+         Beautiful coast
+        </h3>
         <p>
-            Discover amazing places, enjoy unique activities,
-            and live an unforgettable experience.
+         Enjoy beaches, clear water and impressive seaside views.
         </p>
-
-        <div class="hero-buttons">
-            
-            <a href="agenda.html" class="btn-more">Discover More Activities</a>
-        </div>
-
-    </se>
-    <section class="us">
-        <h2>Who are we?</h2>
-    </section>
-
-</main>
-
-
-
-
-
-    
-</body>
+       </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+       <div class="benefit">
+        <i class="bi bi-building">
+        </i>
+        <h3>
+         Rich heritage
+        </h3>
+        <p>
+         Explore historic sites, medinas and local traditions.
+        </p>
+       </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+       <div class="benefit">
+        <i class="bi bi-palette">
+        </i>
+        <h3>
+         Local crafts
+        </h3>
+        <p>
+         Discover Nabeul's pottery and colourful handmade art.
+        </p>
+       </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+       <div class="benefit">
+        <i class="bi bi-tree">
+        </i>
+        <h3>
+         Open nature
+        </h3>
+        <p>
+         Find peaceful trails and landscapes across the peninsula.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="cta-section">
+    <div class="container text-center">
+     <h2>
+      Ready to plan your visit?
+     </h2>
+     <p>
+      Choose an experience and calculate your estimated price.
+     </p>
+     <a class="btn btn-light btn-lg" href="reservation.html">
+      Simulate a reservation
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <p class="mb-0">
+     &copy; 2026 Cap Bon Explorer
+    </p>
+    <p class="mb-0">
+     Explore &middot; Discover &middot; Enjoy
+    </p>
+    <div>
+     <a href="index.html">
+      Home
+     </a>
+     <a href="activities.html">
+      Activities
+     </a>
+     <a href="contact.html">
+      Contact
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/activities-data.js"></script>
+  <script src="js/app.js">
+  </script>
+ </body>
 </html>
