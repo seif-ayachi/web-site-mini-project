@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Contact | Cap Bon Explorer
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+     <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img alt="Cap Bon Explorer logo" src="images/logo.png"/>
+      <span>
+       Cap Bon Explorer
+      </span>
+     </a>
+     <button aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon">
+      </span>
+     </button>
+     <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+       <li class="nav-item">
+        <a class="nav-link" href="index.html">
+         Home
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="activities.html">
+         Activities
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="agenda.html">
+         Diary
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="reservation.html">
+         Reservation
+        </a>
+       </li>
+       <li class="nav-item">
+        <a aria-current="page" class="nav-link active" href="contact.html">
+         Contact
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section class="page-banner">
+    <div class="container">
+     <span class="eyebrow">
+      WE'D LOVE TO HEAR FROM YOU
+     </span>
+     <h1>
+      Contact us
+     </h1>
+     <p>
+      Questions about Cap Bon or one of our experiences? Send us a message.
+     </p>
+    </div>
+   </section>
+   <section class="section-pad">
+    <div class="container">
+     <div class="row g-4">
+      <div class="col-lg-6">
+       <div class="info-card">
+        <h2>
+         Get in touch
+        </h2>
+        <div class="contact-row">
+         <i class="bi bi-geo-alt">
+         </i>
+         <div>
+          <strong>
+           Address
+          </strong>
+          <p>
+           Nabeul, Cap Bon, Tunisia
+          </p>
+         </div>
+        </div>
+        <div class="contact-row">
+         <i class="bi bi-telephone">
+         </i>
+         <div>
+          <strong>
+           Phone
+          </strong>
+          <p>
+           +216 72 000 000
+          </p>
+         </div>
+        </div>
+        <div class="contact-row">
+         <i class="bi bi-envelope">
+         </i>
+         <div>
+          <strong>
+           Email
+          </strong>
+          <p>
+           hello@capbonexplorer.example
+          </p>
+         </div>
+        </div>
+        <hr/>
+        <h3>
+         Reception hours
+        </h3>
+        <div class="hours-row">
+         <span>
+          Monday &ndash; Friday
+         </span>
+         <span>
+          09:00 &ndash; 17:00
+         </span>
+        </div>
+        <div class="hours-row">
+         <span>
+          Saturday
+         </span>
+         <span>
+          09:00 &ndash; 13:00
+         </span>
+        </div>
+        <div class="hours-row">
+         <span>
+          Sunday
+         </span>
+         <span>
+          Closed
+         </span>
+        </div>
+       </div>
+       <p class="small text-secondary mt-2">
+        The address and contact details are fictitious and used for this academic project.
+       </p>
+      </div>
+      <div class="col-lg-6">
+       <form class="form-card" id="contactForm">
+        <h2>
+         Send a message
+        </h2>
+        <div class="mb-3">
+         <label class="form-label" for="contactName">
+          Name
+         </label>
+         <input class="form-control" id="contactName" required=""/>
+        </div>
+        <div class="mb-3">
+         <label class="form-label" for="contactEmail">
+          Email
+         </label>
+         <input class="form-control" id="contactEmail" required="" type="email"/>
+        </div>
+        <div class="mb-3">
+         <label class="form-label" for="subject">
+          Subject
+         </label>
+         <input class="form-control" id="subject" required=""/>
+        </div>
+        <div class="mb-3">
+         <label class="form-label" for="message">
+          Message
+         </label>
+         <textarea class="form-control" id="message" required="" rows="5"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">
+         Send message
+        </button>
+        <div aria-live="polite" class="mt-3" id="contactMessage">
+        </div>
+       </form>
+      </div>
+     </div>
+     <section class="mt-5">
+      <div class="section-heading">
+       <span class="eyebrow">
+        GOOD TO KNOW
+       </span>
+       <h2>
+        Frequently asked questions
+       </h2>
+      </div>
+      <div class="accordion" id="faq">
+       <div class="accordion-item">
+        <h3 class="accordion-header">
+         <button class="accordion-button" data-bs-target="#q1" data-bs-toggle="collapse">
+          Are the activities real bookings?
+         </button>
+        </h3>
+        <div class="accordion-collapse collapse show" data-bs-parent="#faq" id="q1">
+         <div class="accordion-body">
+          No. This website is an educational demonstration. It does not confirm actual bookings or process payments.
+         </div>
+        </div>
+       </div>
+       <div class="accordion-item">
+        <h3 class="accordion-header">
+         <button class="accordion-button collapsed" data-bs-target="#q2" data-bs-toggle="collapse">
+          Where is Cap Bon?
+         </button>
+        </h3>
+        <div class="accordion-collapse collapse" data-bs-parent="#faq" id="q2">
+         <div class="accordion-body">
+          Cap Bon is a peninsula in north-eastern Tunisia, known for its coastline, towns and cultural heritage.
+         </div>
+        </div>
+       </div>
+       <div class="accordion-item">
+        <h3 class="accordion-header">
+         <button class="accordion-button collapsed" data-bs-target="#q3" data-bs-toggle="collapse">
+          Can I visit activities with a group?
+         </button>
+        </h3>
+        <div class="accordion-collapse collapse" data-bs-parent="#faq" id="q3">
+         <div class="accordion-body">
+          The simulator accepts between one and six participants and applies a 10% discount for groups of at least four.
+         </div>
+        </div>
+       </div>
+       <div class="accordion-item">
+        <h3 class="accordion-header">
+         <button class="accordion-button collapsed" data-bs-target="#q4" data-bs-toggle="collapse">
+          Are the prices official?
+         </button>
+        </h3>
+        <div class="accordion-collapse collapse" data-bs-parent="#faq" id="q4">
+         <div class="accordion-body">
+          No. Prices are fictitious values supplied for this academic project.
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <p class="mb-0">
+     &copy; 2026 Cap Bon Explorer
+    </p>
+    <p class="mb-0">
+     Explore &middot; Discover &middot; Enjoy
+    </p>
+    <div>
+     <a href="index.html">
+      Home
+     </a>
+     <a href="activities.html">
+      Activities
+     </a>
+     <a href="contact.html">
+      Contact
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
